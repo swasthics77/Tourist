@@ -1,0 +1,93 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.tourist.Search"
+    android:orientation="vertical"
+    android:background="@drawable/back1"
+    >
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorPrimary"
+        android:id="@+id/tool_bar"
+        android:elevation="2dp"
+        android:title="PLACES TO VISIT"
+        layout="@layout/tool_bar"
+
+
+
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="50dp"
+    android:layout_gravity="center"
+    android:paddingBottom="50dp">
+    <EditText
+
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:id="@+id/edit"
+        android:hint="Enter the destination"
+          android:paddingRight="10dp"
+    />
+<Button
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/ic_search_category_default"
+    android:id="@+id/find"></Button>
+
+</LinearLayout>
+
+
+        <TextView
+            android:id="@+id/lbl_your_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISTANCE: "
+            android:textColor="@color/ColorPrimary"
+            android:layout_gravity="center"
+            android:textSize="35dp"
+
+
+
+            />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/textDist1"
+            android:textColor="@color/ColorPrimary"
+            android:paddingBottom="50dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIME: "
+            android:layout_gravity="center"
+            android:textSize="35dp"
+            android:textColor="@color/ColorPrimary"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/textTime1"
+            android:textColor="@color/ColorPrimary"/>
+    </LinearLayout>

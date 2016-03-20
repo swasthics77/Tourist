@@ -1,0 +1,97 @@
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tourist.Detail"
+    android:background="@drawable/back1">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorPrimary"
+        android:id="@+id/tool_bar"
+        android:elevation="4dp"
+
+        />
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+
+
+          >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+
+        android:background="@drawable/background"
+        android:id="@+id/imag"
+        android:src="@drawable/images1"
+
+        />
+
+
+    <TextView
+        android:id="@+id/textv"
+        android:layout_below="@+id/imag"
+        android:paddingTop="20dp"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+
+       />
+
+
+
+       </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/add_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/add_button_margin"
+        android:layout_marginEnd="@dimen/add_button_margin"
+        android:src="@android:drawable/ic_menu_directions"
+        android:tint="@android:color/white"
+        android:background="@drawable/oval_ripple"
+
+        android:elevation="@dimen/elevation_low"
+        android:stateListAnimator="@anim/button_elevation"
+
+        />
+
+
+
+
+</FrameLayout>
